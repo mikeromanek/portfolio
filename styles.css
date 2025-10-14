@@ -63,7 +63,113 @@ header nav ul li a:hover {
 }
 .sidebar nav ul {
   list-style: none;
-  padding: 0;
+  /* Responsive helpers - mobile adjustments */
+
+  /* Make media scale fluidly */
+  img, picture, video, .thumbnail-contain {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* When the sidebar is fixed on larger screens, offset the main content so it doesn't sit underneath it. */
+  .main-content {
+    margin-left: 240px; /* slightly larger than sidebar width for breathing room */
+    box-sizing: border-box;
+  }
+
+  /* Tablet and smaller: collapse the sidebar into a top bar and make content full width */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      padding: 0.5rem 1rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sidebar-profile {
+      width: 56px;
+      height: 56px;
+      margin: 0;
+      border-radius: 6px;
+      border: 2px solid rgba(0,0,0,0.08);
+    }
+
+    .sidebar nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 0.75rem;
+      margin-top: 0;
+    }
+
+    .sidebar nav li a {
+      font-size: 1rem;
+    }
+
+    .main-content {
+      margin-left: 0;
+      padding: 1.25rem;
+    }
+
+    .welcome {
+      padding: 2rem 1rem;
+    }
+
+    .about-me .bio-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Ensure project thumbnails don't force tall fixed heights on small screens */
+    .projects .project-card img,
+    .thumbnail-wrapper {
+      height: auto;
+    }
+
+    .contact-form {
+      padding: 2rem 1rem;
+      max-width: 100%;
+    }
+  }
+
+  /* Small phones: tighten spacing and scale down some elements for readability */
+  @media (max-width: 480px) {
+    html {
+      font-size: 16px;
+    }
+
+    header nav ul {
+      gap: 0.5rem;
+    }
+
+    .sidebar nav li a {
+      font-size: 0.95rem;
+    }
+
+    .projects .project-grid {
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+
+    .welcome {
+      padding: 1.25rem 0.75rem;
+    }
+
+    .about-me .bio-container img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .sidebar-profile {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  /*# sourceMappingURL=styles.css.map */
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
