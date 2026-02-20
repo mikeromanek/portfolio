@@ -1,134 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5T6B8EQDBN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5T6B8EQDBN');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T6B8EQDBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5T6B8EQDBN');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Projects – Michael Romanek</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="UX Research and Design projects by Michael Romanek — COVE Space study, accessibility audits, Figma design systems, and more." />
+  <title>Projects — Michael Romanek</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
+
+  <aside class="sidebar">
+    <svg class="sidebar-logo" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" aria-label="MR monogram">
+      <rect width="110" height="110" fill="#111111"/>
+      <text x="55" y="72" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="52" fill="#FFFFFF">MR</text>
+      <rect x="14" y="82" width="82" height="3" fill="#7A1E2C"/>
+    </svg>
+    <div class="sidebar-name">Michael Romanek</div>
+    <div class="sidebar-title">UX Researcher &amp; Designer</div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">mikeromanek.github.io/portfolio</div>
+  </aside>
+
+  <header>
+    <span class="header-brand">MR</span>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-  <a href="images/Website.png" target="_blank">
-          <img src="images/Website.png" alt="Personal Website Project" />
-        </a>
-        <h3>Personal Website Project</h3>
-        <p>A fun landing page built with pure HTML and SCSS.</p>
-        <p>I referenced the Branding Project for the color and typography of this website. In the future I hope to improve and add more in the future.</p>
-      </div>
+  <div class="main-content">
 
-      <div class="project-card">
-        <a href="images/VD_Branding_Project_Poster copy.jpg" target="_blank">
-          <img src="images/VD_Branding_Project_Poster copy.jpg" alt="Branding/Portfolio Project" />
-        </a>
-        <h3>Personal Branding/Portfolio Project</h3>
-        <p>A project on creating a brand about myself to show all the design principles I learned.</p>
-        <p>Giving reasoning for every aspect in the poster and the products presented.</p>
-      </div>
+    <section class="welcome" style="min-height:auto;padding:4rem;">
+      <div class="eyebrow">Selected Work</div>
+      <h1 style="font-size:2.6rem;">Research &amp; Design<br><em>Projects.</em></h1>
+    </section>
 
-      <div class="project-card">
-        <a href="images/Pickleball Tournament Instagram Post Assignment 5.png" target="_blank">
-          <img src="images/Pickleball Tournament Instagram Post Assignment 5.png" alt="Poster Project" />
-        </a>
-        <h3>Poster Project</h3>
-        <p>A poster design I created for a class project. We had to create, redesign, and refine over multiple iterations. About 5 times to be exact.</p>
-        <p>This challenged me to think outside the box and completely break the mold of my original design.</p>
-      </div>
+    <section class="projects">
+      <div class="section-label">Portfolio</div>
+      <h2>My Projects</h2>
+      <div class="divider"></div>
+      <div class="project-grid">
 
-      <!-- ✅ Add New Project -->
-      <div class="project-card">
-        <a href="images/Logo.png" target="_blank">
-         <img src="images/Logo.png" alt="Mike's Health and Lifestyle Project" />
-        </a>
-  <h3><a href="https://www.linkedin.com/company/mike-s-health-and-lifestyle/?viewAsMember=true" target="_blank" rel="noopener" style="color: #008C92; text-decoration: underline;">Mike’s Health and Lifestyle</a></h3>
-        <p>A semester-long project where I created a LinkedIn page merging UX principles with health and wellness content.</p>
-        <p>This project included publishing five long-form articles, designing a daily posting strategy, and applying SEO techniques to boost visibility. It challenged me to integrate storytelling, content design, and real-world UX analysis while building a personal and professional brand voice.</p>
-      </div>
-
-      <!-- ✅ Add New Project -->
-      <div class="project-card">
-        <a href="images/RocketClubLogo.jpg" target="_blank">
-          <img src="images/RocketClubLogo.jpg" alt="Rocket Club Projects" />
-        </a>
-        <h3>Rocket Club UX Rebrand</h3>
-        <p>I am in charge of redesigning, creating, and improving on the clubs website, branding, managing conflicts and communication between mulitple different teams. </p>
-        <p>More to come in the next few months</p>
-      </div>
-
-      <!-- ✅ Add New Project -->
-      <div class="project-card">
-        <a href="images/Eagle Scout/GroupPicture.jpg" target="_blank">
-          <img src="images/Eagle Scout/GroupPicture.jpg" alt="Eagle Scout Project" />
-        </a>
-        <h3>Eagle Scout Project</h3>
-        <p>In this project I searched for a need in the community, worked with the organization to come up with a project plan, estimates, and pricing to submit to a review board for approval.</p>
-        <p>This challenged me mentally and physically having to plan, coordinate, and create this project.</p>
-        <p>This was almost a year long proccess which take determination and grit.</p>
-      </div>
-
-      <!-- ✅ Added: Design Thinking College Apparel -->
-      <div class="project-card">
-        <div class="thumbnail-wrapper">
-          <a href="Design Thinking College Apparel of the Future Final Project.docx" target="_blank">
-            <img class="thumbnail-contain" src="images/DesignThinkingFinalProject.png" alt="Design Thinking College Apparel" />
+        <!-- COVE UX Research -->
+        <div class="project-card">
+          <a href="Michael_Romanek_COVE_UX_Research_Project.docx" target="_blank" class="card-thumb">
+            <img src="images/COVEUXResearchProject.jpg" alt="COVE UX Research Project" />
           </a>
+          <div class="card-body">
+            <h3>COVE Space UX Research</h3>
+            <p>Mixed-methods field study with contextual observations across 3 campus zones and semi-structured user interviews. Affinity mapping surfaced a key design tension between study and social functions, leading to evidence-based recommendations.</p>
+            <a class="doc-link card-link" href="Michael_Romanek_COVE_UX_Research_Project.docx" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+          </div>
         </div>
-        <h3>Design Thinking: College Apparel of the Future</h3>
-        <p>A final project that applies design thinking to reimagine college apparel — from concept to prototypes and user testing.</p>
-        <p>Applied the full design thinking process—from empathy research to prototyping—to design inclusive, sustainable apparel, showcasing skills in user research, ideation, and iterative testing.</p>
-        <p style="text-align:center;"><a class="doc-link" href="Design Thinking College Apparel of the Future Final Project.docx" target="_blank" rel="noopener">Open document (DOCX)</a></p>
-      </div>
 
-      <!-- ✅ Added: High-Fidelity UI Design Interaction -->
-      <div class="project-card">
-        <div class="thumbnail-wrapper">
-          <a href="High-Fidelity UI Design Interaction Design Final Project.docx" target="_blank">
-            <img class="thumbnail-contain" src="images/FridgeFriends.png" alt="High-Fidelity UI Design Project" />
-          </a>
+        <!-- High-Fidelity UI Design -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/FridgeFriends.png" alt="High-Fidelity UI Design" class="contain" />
+          </div>
+          <div class="card-body">
+            <h3>High-Fidelity UI Design System</h3>
+            <p>Comprehensive Figma design system — color palette, typography, spacing, grid, and multi-state components — paired with 15+ high-fidelity screens and an interactive prototype built for developer handoff.</p>
+            <a class="doc-link card-link" href="High-Fidelity UI Design Interaction Design Final Project.docx" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+          </div>
         </div>
-        <h3>High-Fidelity UI Design & Interaction</h3>
-        <p>A final project showcasing high-fidelity mockups(15+) and interaction design patterns for a product experience. Demonstrating expertise in visual hierarchy, interactive components, and professional prototyping workflows.</p>
-        <p>Covers prototype flows, usability findings, and interaction specifications used for development handoff.</p>
-        <p style="text-align:center;"><a class="doc-link" href="High-Fidelity UI Design Interaction Design Final Project.docx" target="_blank" rel="noopener">Open document (DOCX)</a></p>
-      </div>
 
-      <!-- ✅ Added: COVE UX Research Project -->
-      <div class="project-card">
-        <a href="Michael_Romanek_COVE_UX_Research_Project.docx" target="_blank">
-          <img src="images/COVEUXResearchProject.jpg" alt="COVE UX Research Project" />
-        </a>
-        <h3>COVE UX Research Project</h3>
-        <p>A comprehensive UX research project focused on COVE, including interview guides, findings, and recommendations.</p>
-        <p>Demonstrates research methods, led field observations and student interviews to uncover usability patterns, then synthesized findings through affinity mapping—strengthening my qualitative research, analysis, and user‑centered insight skills.</p>
-        <p style="text-align:center;"><a class="doc-link" href="Michael_Romanek_COVE_UX_Research_Project.docx" target="_blank" rel="noopener">Open document (DOCX)</a></p>
-      </div>
-    </div>
-  </section>
+        <!-- Design Thinking -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/DesignThinkingFinalProject.png" alt="Design Thinking College Apparel" class="contain" />
+          </div>
+          <div class="card-body">
+            <h3>Design Thinking: College Apparel</h3>
+            <p>Applied the full design thinking process — empathy research to prototyping — to reimagine college apparel. Focused on inclusive, sustainable design with iterative user testing at every stage.</p>
+            <a class="doc-link card-link" href="Design Thinking College Apparel of the Future Final Project.docx" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+          </div>
+        </div>
 
-  <footer style="text-align: center; padding: 1rem; color: #888;">
-    <p>© 2025 Michael Romanek. All rights reserved.</p>
-  </footer>
+        <!-- Rocket Club -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/RocketClubLogo.jpg" alt="Rocket Club UX Rebrand" />
+          </div>
+          <div class="card-body">
+            <h3>Rocket Club UX Rebrand</h3>
+            <p>Lead UX Designer for MSOE's High Power Rocketry Club — responsible for website redesign, visual identity, cross-functional team coordination, and accessibility evaluation. Ongoing project with more to come.</p>
+          </div>
+        </div>
+
+        <!-- Mike's Health & Lifestyle -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/thumbnail_03_health.png" alt="Mike's Health and Lifestyle" />
+          </div>
+          <div class="card-body">
+            <h3>Mike's Health &amp; Lifestyle</h3>
+            <p>A semester-long LinkedIn content strategy project applying UX principles to health and wellness. Published five long-form articles, designed a daily posting strategy, and applied SEO techniques — building brand voice at the intersection of research and storytelling.</p>
+            <a class="doc-link card-link" href="https://www.linkedin.com/company/mike-s-health-and-lifestyle/?viewAsMember=true" target="_blank" rel="noopener">View LinkedIn Page →</a>
+          </div>
+        </div>
+
+        <!-- Eagle Scout Project -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/Eagle Scout/GroupPicture.jpg" alt="Eagle Scout Project" />
+          </div>
+          <div class="card-body">
+            <h3>Eagle Scout Community Project</h3>
+            <p>Identified a community need, developed a project plan with estimates and budget submitted to a review board, then coordinated and led a volunteer crew to deliver the project over nearly a year. Built determination, stakeholder management, and project leadership skills.</p>
+          </div>
+        </div>
+
+        <!-- Personal Website -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/Website.png" alt="Personal Portfolio Website" />
+          </div>
+          <div class="card-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>This site — built with HTML, CSS/SCSS, and brand system. Designed with the Research Authority Minimal aesthetic: Rich Black, Deep Burgundy, and Cool Graphite palette with Playfair Display and Inter typography.</p>
+            <a class="doc-link card-link" href="https://mikeromanek.github.io/portfolio/" target="_blank" rel="noopener">View Portfolio Website →</a>
+          </div>
+        </div>
+
+        <!-- Branding Project -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/thumbnail_01_portfolio.png" alt="Personal Branding Project" />
+          </div>
+          <div class="card-body">
+            <h3>Personal Brand Identity</h3>
+            <p>A comprehensive personal branding project covering logo design, color palette, typography system, and applied brand collateral — with documented rationale for every design decision.</p>
+             <a class="doc-link card-link" href="Branding_Project/Brand_Guide_Michael_Romanek.html" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+            <a class="doc-link card-link" href="Branding_Project/LinkedIn_Optimization_Guide_MichaelRomanek.html" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+            <a class="doc-link card-link" href="Branding_Project/Michael_Romanek_CoverLetter_Branded.docx" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+            <a class="doc-link card-link" href="Branding_Project/Michael_Romanek_Resume_Branded.docx" target="_blank" rel="noopener">Open Report (DOCX) →</a>
+          </div>
+        </div>
+
+        <!-- Pickleball Poster -->
+        <div class="project-card">
+          <div class="card-thumb">
+            <img src="images/Pickleball Tournament Instagram Post Assignment 5.png" alt="Poster Design Project" class="contain" />
+          </div>
+          <div class="card-body">
+            <h3>Iterative Poster Design</h3>
+            <p>A 5-iteration poster design project requiring complete conceptual resets between versions. Reinforced the discipline of stepping back from an existing design and rebuilding from new constraints.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-accent"></span>
+      © 2025 Michael Romanek
+      <span class="footer-accent"></span>
+    </footer>
+  </div>
 </body>
 </html>
